@@ -77,7 +77,7 @@ export default class AvBaseInput extends Component {
     this.validate = this.validate.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.value = this.props.value || this.getDefaultValue();
     this.setState({ value: this.value });
     this.updateValidations();

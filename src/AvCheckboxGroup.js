@@ -77,7 +77,7 @@ export default class AvCheckboxGroup extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.value = this.props.value || this.getDefaultValue().value;
     this.setState({ value: this.value });
     this.updateValidations();

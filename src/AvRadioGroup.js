@@ -70,7 +70,7 @@ export default class AvRadioGroup extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.value = this.props.value || this.getDefaultValue().value;
     this.setState({ value: this.value });
     this.updateValidations();
